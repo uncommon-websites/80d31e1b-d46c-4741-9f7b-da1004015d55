@@ -1,198 +1,214 @@
 <script lang="ts">
-    // Images placeholders
-    const heroImage = "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2560&auto=format&fit=crop";
-    const deskImage = "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1000&auto=format&fit=crop";
-    const glassesImage = "https://images.unsplash.com/photo-1590525626244-6720d234853f?q=80&w=1000&auto=format&fit=crop";
-    const bedroomImage = "https://images.unsplash.com/photo-1505693416388-b034680950ec?q=80&w=2560&auto=format&fit=crop";
-    const bedCornerImage = "https://images.unsplash.com/photo-1616594039964-40891a909d93?q=80&w=1000&auto=format&fit=crop";
-    const woodDetailImage = "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1000&auto=format&fit=crop";
-    const shelfDetailImage = "https://images.unsplash.com/photo-1595515106962-5907659ed678?q=80&w=1000&auto=format&fit=crop";
-    const shelfFullImage = "https://images.unsplash.com/photo-1594040226829-7f251ab46d80?q=80&w=1000&auto=format&fit=crop";
-    const livingRoomImage = "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2560&auto=format&fit=crop";
-    const hallwayImage = "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop";
-    const kitchenImage = "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1000&auto=format&fit=crop";
-    const terraceImage = "https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=2560&auto=format&fit=crop";
-    const woodJoineryImage = "https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=1000&auto=format&fit=crop";
-    const kitchenIslandImage = "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop";
-    const ctaLeft = "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2000&auto=format&fit=crop";
-    const ctaRight = "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2000&auto=format&fit=crop";
-
+    // Vue AG Real Estate Images
+    const heroImage = "/generated/image-elegant-zrich-cityscape-with-lake-zrich--1766403318708-0.webp";
+    const foundersImage = "/generated/image-three-professional-swiss-businessmen-bro-1766403322440-1.webp";
+    const buildingFacade = "/generated/image-elegant-historic-zrich-apartment-buildin-1766403325277-2.webp";
+    const penthouseInterior = "/generated/image-modern-luxury-zrich-penthouse-interior-w-1766403328198-3.webp";
+    const handshakeImage = "/generated/image-professional-handshake-between-business--1766403330963-4.webp";
+    const oldTownStreet = "/generated/image-zrich-old-town-cobblestone-street-with-t-1766403333660-5.webp";
+    const officeInterior = "/generated/image-modern-minimalist-swiss-office-interior--1766403336543-6.webp";
+    const aerialView = "/generated/image-aerial-view-of-zrich-residential-neighbo-1766403339247-7.webp";
 </script>
 
 <div class="w-full">
     <!-- Hero Section -->
     <section class="w-full mb-16 md:mb-24 px-4 md:px-6 max-w-[1600px] mx-auto">
         <div class="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden">
-            <img src={heroImage} alt="Kent Avenue Penthouse" class="w-full h-full object-cover" />
-            <button class="absolute bottom-6 right-6 bg-transparent border border-white/50 text-white px-4 py-2 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-colors flex items-center gap-2">
-                Share
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
-                </svg>
-            </button>
+            <img src={heroImage} alt="Zürich cityscape with Lake Zürich" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-12 left-6 md:left-12 right-6 md:right-12 text-white">
+                <h1 class="font-display text-4xl md:text-6xl lg:text-7xl mb-4 md:mb-6 max-w-4xl">Real estate on your terms</h1>
+                <p class="text-lg md:text-xl font-light max-w-2xl mb-8 opacity-95">We help Zürich property owners sell quickly, quietly, and fairly—without the delays and headaches of the traditional process.</p>
+                <a href="#contact" class="inline-block bg-white text-gray-900 px-8 py-4 text-sm uppercase tracking-widest hover:bg-gray-100 transition-colors">
+                    Get a confidential valuation
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Project Info -->
+    <!-- Value Proposition -->
     <section class="max-w-[1200px] mx-auto px-6 mb-24 md:mb-32">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
             <div>
-                <h1 class="font-display text-4xl md:text-5xl text-gray-900 mb-8">Kent Avenue Penthouse</h1>
-                <div class="text-gray-600 text-sm leading-relaxed space-y-4 max-w-md font-light">
+                <h2 class="font-display text-3xl md:text-4xl text-gray-900 mb-8">Sell privately. Move forward confidently.</h2>
+                <div class="text-gray-600 text-base leading-relaxed space-y-4 max-w-md font-light">
                     <p>
-                        Perched high above the bustling city of New York, with magnificent views of the East River and the iconic Manhattan skyline, this unique penthouse flat combines warm minimalism and tactile materiality.
+                        Vue AG is a family-owned acquirer focused on building sustainable real estate portfolios. We buy directly from owners—no brokers, no auctions, no stress.
                     </p>
                     <p>
-                        The flat, which was designed and decorated by Norm Architects, strikes a perfect balance between New York's raw industrial vibe and a timeless Scandinavian aesthetic.
+                        Our reputation matters. That's why most of our partnerships come through trusted notaries, lawyers, and word of mouth.
                     </p>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-y-6 text-[11px] uppercase tracking-wider">
-                <div class="text-gray-400">Private residence</div>
-                <div class="text-gray-900">New York City, USA</div>
-
-                <div class="text-gray-400">Architect</div>
-                <div class="text-gray-900">Norm Architects</div>
-
-                <div class="text-gray-400">Photographer</div>
-                <div class="text-gray-900">Jonas Bjerre-Poulsen</div>
-
-                <div class="col-span-2 pt-6 border-t border-gray-100 mt-2">
-                    <div class="text-gray-400 mb-1">Product</div>
-                    <div class="text-gray-900">Dinesen HeartOak, Natural Oil, Dinesen Collection</div>
+            <div class="grid grid-cols-1 gap-8">
+                <div>
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400 mb-2">Speed</h3>
+                    <p class="text-gray-900 font-light">We make decisions in days, not months</p>
+                </div>
+                <div>
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400 mb-2">Privacy</h3>
+                    <p class="text-gray-900 font-light">No listings, no signage, no publicity</p>
+                </div>
+                <div>
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400 mb-2">Certainty</h3>
+                    <p class="text-gray-900 font-light">When we say yes, we mean it</p>
+                </div>
+                <div>
+                    <h3 class="text-sm uppercase tracking-wider text-gray-400 mb-2">Respect</h3>
+                    <p class="text-gray-900 font-light">We treat every owner and property with care</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Image Grid 1 -->
-    <section class="max-w-[1600px] mx-auto px-6 mb-24 md:mb-32">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+    <!-- Trust Section -->
+    <section id="trust" class="max-w-[1600px] mx-auto px-6 mb-24 md:mb-32">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <div class="md:col-span-5 md:col-start-2">
-                <img src={deskImage} alt="Desk detail" class="w-full aspect-[3/4] object-cover mb-4" />
-                <p class="text-xs text-gray-400 font-light max-w-xs mt-8 leading-relaxed">
-                    The dwelling was designed to provide a calm refuge from the hectic pulse of the city, with a minimalist interior that combines warm, functional and aesthetic qualities to create a solving and harmonious setting.
-                </p>
+                <img src={handshakeImage} alt="Professional partnership" class="w-full aspect-[4/3] object-cover mb-8" />
+                <div class="max-w-md">
+                    <h2 class="font-display text-3xl text-gray-900 mb-6">Built on trust. Backed by family.</h2>
+                    <p class="text-gray-600 font-light leading-relaxed mb-4">
+                        We're not a fund. We're not a large developer. We're a small group of founders with skin in the game—focused on long-term, responsible growth.
+                    </p>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        Our reputation matters. That's why most of our partnerships come through trusted notaries, lawyers, and word of mouth.
+                    </p>
+                </div>
             </div>
-            <div class="md:col-span-5 md:col-start-8 md:mt-32">
-                 <img src={glassesImage} alt="Glasses detail" class="w-full aspect-square object-cover" />
+            <div class="md:col-span-5 md:col-start-8">
+                 <img src={officeInterior} alt="Vue AG office" class="w-full aspect-[4/3] object-cover" />
             </div>
         </div>
     </section>
 
-    <!-- Full Width Image -->
-    <section class="max-w-[1600px] mx-auto px-6 mb-24 md:mb-32">
-        <img src={bedroomImage} alt="Bedroom view" class="w-full aspect-[16/9] md:aspect-[21/9] object-cover" />
+    <!-- Portfolio Showcase -->
+    <section id="portfolio" class="max-w-[1600px] mx-auto px-6 mb-24 md:mb-32">
+        <div class="mb-12">
+            <h2 class="font-display text-3xl md:text-4xl text-gray-900 mb-4">Zürich roots. Urban focus.</h2>
+            <p class="text-gray-600 font-light max-w-2xl">We specialize in acquiring multi-unit residential and mixed-use properties across the Zürich region. We preserve what works and improve what doesn't—one building at a time.</p>
+        </div>
+        <img src={aerialView} alt="Zürich aerial view" class="w-full aspect-[16/9] md:aspect-[21/9] object-cover" />
     </section>
 
-    <!-- Image Grid 2 -->
+    <!-- Portfolio Grid -->
     <section class="max-w-[1600px] mx-auto px-6 mb-24 md:mb-32">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-                <img src={bedCornerImage} alt="Bedroom corner" class="w-full aspect-[3/4] object-cover" />
+                <img src={buildingFacade} alt="Historic Zürich building" class="w-full aspect-[3/4] object-cover" />
             </div>
             <div class="flex flex-col justify-between">
-                <img src={woodDetailImage} alt="Wood detail" class="w-full aspect-[3/4] object-cover mb-8" />
-                <div class="max-w-xs ml-auto">
-                     <p class="text-xs text-gray-400 font-light leading-relaxed">
-                        Dinesen Oak plays a central role in the bespoke solutions that define the interior. The timeless quality of the wood is highlighted in custom-made features designed to match the feel and functions of the flat. These specially designed elements include a bedframe, a wardrobe, a shelving unit and an integrated desk, all made of Dinesen Oak, which adds a warm and organic touch to the space.
-                    </p>
+                <img src={oldTownStreet} alt="Zürich old town" class="w-full aspect-[3/4] object-cover mb-8" />
+                <div class="max-w-md ml-auto">
+                     <h3 class="text-sm uppercase tracking-wider text-gray-400 mb-3">Who we buy from</h3>
+                     <ul class="text-gray-600 font-light space-y-2">
+                        <li>• Families managing inheritance or succession</li>
+                        <li>• Owners of older properties needing renovation</li>
+                        <li>• Individuals tired of bureaucracy or delays</li>
+                        <li>• Foundations seeking clean, quiet exits</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Image Grid 3 -->
-    <section class="max-w-[1600px] mx-auto px-6 mb-24 md:mb-32">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-end">
-             <div class="md:col-span-5">
-                <img src={shelfDetailImage} alt="Shelf detail" class="w-full aspect-[4/5] object-cover" />
+    <!-- Process Section -->
+    <section id="process" class="max-w-[1200px] mx-auto px-6 mb-24 md:mb-32">
+        <h2 class="font-display text-3xl md:text-4xl text-gray-900 mb-16 text-center">How it works</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary-100 text-primary-700 rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-6">1</div>
+                <h3 class="text-lg font-medium text-gray-900 mb-3">Initial conversation</h3>
+                <p class="text-gray-600 font-light text-sm leading-relaxed">Speak directly with one of our founders. Share your situation, timeline, and expectations.</p>
             </div>
-            <div class="md:col-span-7">
-                <img src={shelfFullImage} alt="Shelf full view" class="w-full aspect-[4/3] object-cover" />
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary-100 text-primary-700 rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-6">2</div>
+                <h3 class="text-lg font-medium text-gray-900 mb-3">Property evaluation</h3>
+                <p class="text-gray-600 font-light text-sm leading-relaxed">We review your property details and conduct a discreet assessment. No public listings required.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary-100 text-primary-700 rounded-full flex items-center justify-center text-2xl font-display mx-auto mb-6">3</div>
+                <h3 class="text-lg font-medium text-gray-900 mb-3">Fair offer & closing</h3>
+                <p class="text-gray-600 font-light text-sm leading-relaxed">Receive a transparent offer within days. If accepted, we handle everything through closing.</p>
             </div>
         </div>
     </section>
 
-    <!-- Large Living Room Image -->
+    <!-- Penthouse Showcase -->
     <section class="w-full mb-24 md:mb-32">
-        <img src={livingRoomImage} alt="Living room" class="w-full h-[80vh] object-cover" />
+        <img src={penthouseInterior} alt="Zürich penthouse interior" class="w-full h-[70vh] object-cover" />
     </section>
 
-    <!-- Image Grid 4 & Text -->
-    <section class="max-w-[1600px] mx-auto px-6 mb-24 md:mb-32">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 items-start">
-            <img src={hallwayImage} alt="Hallway" class="w-full aspect-[3/4] object-cover" />
-            <div class="md:pt-32">
-                 <img src={kitchenImage} alt="Kitchen detail" class="w-full aspect-[3/4] object-cover" />
+    <!-- Founders Section -->
+    <section id="founders" class="max-w-[1200px] mx-auto px-6 mb-24 md:mb-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+            <div>
+                <img src={foundersImage} alt="Vue AG founders - Amini brothers" class="w-full aspect-[4/3] object-cover" />
+            </div>
+            <div>
+                <h2 class="font-display text-3xl md:text-4xl text-gray-900 mb-8">Meet the founders</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-1">Azim Amini</h3>
+                        <p class="text-sm text-gray-500 uppercase tracking-wider mb-2">Mitgründer, Technologie & Akquise</p>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed">Leads technology strategy and property acquisition, bringing data-driven insights to every decision.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-1">Milad Amini</h3>
+                        <p class="text-sm text-gray-500 uppercase tracking-wider mb-2">Mitgründer, Investitionen</p>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed">Oversees investment strategy and portfolio management with a focus on sustainable growth.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-1">Nawid Amini</h3>
+                        <p class="text-sm text-gray-500 uppercase tracking-wider mb-2">Mitgründer, Operations</p>
+                        <p class="text-gray-600 font-light text-sm leading-relaxed">Manages day-to-day operations and ensures seamless execution from offer to closing.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="flex justify-end">
-             <p class="text-xs text-gray-400 font-light max-w-md leading-relaxed">
-                The tactile materials selected for the interior solutions create an experience that elevates the design from being merely visual into a strong sensuous impact. Every element of the interior was carefully selected to support the calm and harmonious atmosphere. Dinesen Oak make a contribution that is not just aesthetic but also functional as the natural and durable materials blend perfectly into Norm Architects' stringent and simple design expression.
+    </section>
+
+    <!-- Why Choose Vue -->
+    <section class="max-w-[1200px] mx-auto px-6 mb-24 md:mb-32">
+        <div class="bg-gray-50 p-12 md:p-16">
+            <h2 class="font-display text-3xl md:text-4xl text-gray-900 mb-8 text-center">Why property owners choose Vue</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                <div class="border-l-2 border-primary-600 pl-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Discreet transactions</h3>
+                    <p class="text-gray-600 font-light text-sm leading-relaxed">Off-market acquisitions that protect your privacy and maintain discretion throughout the process.</p>
+                </div>
+                <div class="border-l-2 border-primary-600 pl-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Fair, transparent offers</h3>
+                    <p class="text-gray-600 font-light text-sm leading-relaxed">Clear pricing based on thorough market analysis and property evaluation.</p>
+                </div>
+                <div class="border-l-2 border-primary-600 pl-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Family-backed stability</h3>
+                    <p class="text-gray-600 font-light text-sm leading-relaxed">Decisions made by founders with skin in the game, not distant committees.</p>
+                </div>
+                <div class="border-l-2 border-primary-600 pl-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">Notary network trust</h3>
+                    <p class="text-gray-600 font-light text-sm leading-relaxed">Most partnerships come through trusted legal professionals who know our reputation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contact" class="w-full bg-primary-900 text-white py-24 md:py-32">
+        <div class="max-w-[1200px] mx-auto px-6 text-center">
+            <h2 class="font-display text-4xl md:text-5xl mb-6">Let's have a confidential conversation</h2>
+            <p class="text-lg md:text-xl font-light mb-12 opacity-90 max-w-3xl mx-auto">
+                If you're thinking of selling or just want to understand your property's value, speak directly with one of our founders. No pressure. No obligations. Just straight answers.
             </p>
-        </div>
-    </section>
-
-    <!-- Terrace Image -->
-    <section class="w-full mb-24 md:mb-32">
-        <img src={terraceImage} alt="Terrace" class="w-full h-[70vh] object-cover" />
-    </section>
-
-    <!-- Bottom Text -->
-    <section class="max-w-[1600px] mx-auto px-6 mb-24 md:mb-32">
-        <div class="max-w-md">
-            <p class="text-xs text-gray-400 font-light leading-relaxed">
-                With a high priority on the sourcing of materials and a keen eye for details, Norm Architects demonstrate their dedication to quality and timeless design in their design of Kent Avenue Penthouse. The result is a dwelling where aesthetic and functional qualities come together in a harmonious, modern and luxurious space - a genuine tribute to natural materials and their ability to ennoble calm in an otherwise hectic world.
-            </p>
-        </div>
-    </section>
-
-    <!-- Final Grid -->
-    <section class="max-w-[1600px] mx-auto px-6 mb-32 md:mb-40">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <img src={woodJoineryImage} alt="Wood joinery" class="w-full aspect-[3/4] object-cover" />
-            <div class="pt-20">
-                <img src={kitchenIslandImage} alt="Kitchen island" class="w-full aspect-[3/4] object-cover" />
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                <a href="mailto:hello@vue.ag" class="bg-white text-gray-900 px-8 py-4 text-sm uppercase tracking-widest hover:bg-gray-100 transition-colors">
+                    hello@vue.ag
+                </a>
+                <a href="tel:+41443334455" class="border border-white px-8 py-4 text-sm uppercase tracking-widest hover:bg-white hover:text-gray-900 transition-colors">
+                    +41 44 333 44 55
+                </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Share Section -->
-    <section class="max-w-[1600px] mx-auto px-6 mb-32">
-        <h3 class="font-display text-2xl mb-6">Share</h3>
-        <div class="flex gap-6 text-xs text-gray-400 uppercase tracking-wide">
-            <a href="#" class="hover:text-black transition-colors">Pinterest</a>
-            <a href="#" class="hover:text-black transition-colors">Twitter</a>
-            <a href="#" class="hover:text-black transition-colors">E-mail</a>
-            <a href="#" class="hover:text-black transition-colors">LinkedIn</a>
-            <a href="#" class="hover:text-black transition-colors">Facebook</a>
-        </div>
-    </section>
-
-    <!-- Bottom CTA -->
-    <section class="w-full grid grid-cols-1 md:grid-cols-2 h-[600px]">
-        <div class="relative group overflow-hidden">
-            <img src={ctaLeft} alt="Get inspired" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-6">
-                <h2 class="font-display text-3xl md:text-4xl mb-2">Get inspired</h2>
-                <p class="text-sm font-light mb-8 opacity-90">Explore our many projects from around the world.</p>
-                <button class="border border-white px-8 py-3 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
-                    Order Cases
-                </button>
-            </div>
-        </div>
-        <div class="relative group overflow-hidden">
-            <img src={ctaRight} alt="Price Lists" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center p-6">
-                <h2 class="font-display text-3xl md:text-4xl mb-2">Receive Dinesen Price Lists</h2>
-                <p class="text-sm font-light mb-8 opacity-90">A Dinesen floor sprouts in the dream, but grows from reality.</p>
-                <button class="border border-white px-8 py-3 text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-colors">
-                    Explore
-                </button>
-            </div>
+            <p class="text-sm opacity-75">Zürich, Switzerland</p>
         </div>
     </section>
 </div>
